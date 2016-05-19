@@ -15,11 +15,12 @@ $ docker-compose up
 
 To initialize a fresh new project:
 create Gemfile with:
+
 source 'https://rubygems.org'
 gem 'rails'
 
 
-Run: 
+Then run: 
 $ docker-compose run --rm web bundle install
 $ docker-compose run --rm web bundle exec rails new . -d postgresql
 Overwrite Gemfile
