@@ -24,17 +24,17 @@ ENV https_proxy 'https://89.167.129.32:80'
 ```
 2. Create new Rails project (if you have already one in that folder, skip this step)  
   1. Create Gemfile containing:  
-```
-source 'https://rubygems.org'  
-gem 'rails'  
-```
+  ```
+  source 'https://rubygems.org'  
+  gem 'rails'  
+   ```
 
   2. Run:  
-```
-$ docker-compose run --rm web bundle install  
-$ docker-compose run --rm web bundle exec rails new . -d postgresql  
-```
-  3. Overwrite Gemfile  
+  ```
+  $ docker-compose run --rm web bundle install  
+  $ docker-compose run --rm web bundle exec rails new . -d postgresql  
+  ```
+  3. Overwrite Gemfile when asked  
 
 3. Run in the cloned folder:  
 ```
