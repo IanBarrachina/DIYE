@@ -14,8 +14,8 @@ https://docs.docker.com/compose/install/
 
 Docker images are based on https://jbhannah.net/articles/rails-development-with-docker/  
 
-1. Download this git repository
-..* If you are behind a proxy, add this to the begining of the Dockerfile (after the FROM line):  
+1. Download this git repository  
+  * If you are behind a proxy, add this to the begining of the Dockerfile (after the FROM line):  
 ```
 ENV HTTP_PROXY 'http://89.167.129.32:80'
 ENV HTTPS_PROXY 'https://89.167.129.32:80'
@@ -23,18 +23,18 @@ ENV http_proxy 'http://89.167.129.32:80'
 ENV https_proxy 'https://89.167.129.32:80'
 ```
 2. Create new Rails project (if you have already one in that folder, skip this step)  
-..1. Create Gemfile containing:  
+  1. Create Gemfile containing:  
 ```
 source 'https://rubygems.org'  
 gem 'rails'  
 ```
 
-..2. Run:  
+  2. Run:  
 ```
 $ docker-compose run --rm web bundle install  
 $ docker-compose run --rm web bundle exec rails new . -d postgresql  
 ```
-..3. Overwrite Gemfile  
+  3. Overwrite Gemfile  
 
 3. Run in the cloned folder:  
 ```
