@@ -6,7 +6,7 @@ Name is temporary, maybe "Clash of Empire Legends Saga" is an original name...
 ## INSTALATION  
 
 ### Docker and Docker Compose
-First, install Docker and docker-compose:  
+First install Docker and docker-compose:  
 https://docs.docker.com/engine/installation/  
 https://docs.docker.com/compose/install/  
 
